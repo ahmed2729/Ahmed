@@ -1,0 +1,115 @@
+
+C:\Users\A_E>cd desktop
+
+C:\Users\A_E\Desktop>mkdir shopping
+
+C:\Users\A_E\Desktop>cd shopping
+
+C:\Users\A_E\Desktop\shopping>get init
+'get' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\A_E\Desktop\shopping>git init
+Initialized empty Git repository in C:/Users/A_E/Desktop/shopping/.git/
+
+
+A_E@DESKTOP-FJ5QQUF MINGW64 ~
+$ cd desktop
+
+A_E@DESKTOP-FJ5QQUF MINGW64 ~/desktop
+$ cd shopping
+
+A_E@DESKTOP-FJ5QQUF MINGW64 ~/desktop/shopping (master)
+$ toutch yard.txt
+bash: toutch: command not found
+
+A_E@DESKTOP-FJ5QQUF MINGW64 ~/desktop/shopping (master)
+$ touch yard.txt
+
+A_E@DESKTOP-FJ5QQUF MINGW64 ~/desktop/shopping (master)
+$ touch groceries.txt
+
+A_E@DESKTOP-FJ5QQUF MINGW64 ~/desktop/shopping (master)
+$ get add yard.txt
+bash: get: command not found
+
+A_E@DESKTOP-FJ5QQUF MINGW64 ~/desktop/shopping (master)
+$ git add yard.txt , groceries.txt
+fatal: pathspec ',' did not match any files
+
+A_E@DESKTOP-FJ5QQUF MINGW64 ~/desktop/shopping (master)
+$ git add yard.txt
+
+A_E@DESKTOP-FJ5QQUF MINGW64 ~/desktop/shopping (master)
+$ git add groceries.txt
+
+A_E@DESKTOP-FJ5QQUF MINGW64 ~/desktop/shopping (master)
+$ git commit -m "create yard and groceries lists"
+[master (root-commit) 6e4e52f] create yard and groceries lists
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 groceries.txt
+ create mode 100644 yard.txt
+
+
+C:\Users\A_E\Desktop\shopping(master)
+λ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   groceries.txt
+        modified:   yard.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\A_E\Desktop\shopping(master)
+λ git commit groceries.txt -m "add ingredients for tomato soup"
+[master 252f987] add ingredients for tomato soup
+ 1 file changed, 3 insertions(+)
+
+C:\Users\A_E\Desktop\shopping(master)
+λ git commit yard.txt -m "add items needed for garden box"
+[master 6d2d5f0] add items needed for garden box
+ 1 file changed, 2 insertions(+)
+
+C:\Users\A_E\Desktop\shopping(master)
+λ git add *
+
+C:\Users\A_E\Desktop\shopping(master)
+λ git commit  -m "add items needed to grow potatoes"
+[master e742351] add items needed to grow potatoes
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+C:\Users\A_E\Desktop\shopping(master)
+λ git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\A_E\Desktop\shopping(master)
+λ git log
+commit e742351f43ad837a652687192f0b39479e88879d (HEAD -> master)
+Author: ahmed2729 <fouadebrahim132@yahoo.com>
+Date:   Sun May 29 18:08:59 2022 +0200
+
+    add items needed to grow potatoes
+
+commit 6d2d5f09f7920cadf58a0c61de96881c25614f93
+Author: ahmed2729 <fouadebrahim132@yahoo.com>
+Date:   Sun May 29 17:58:48 2022 +0200
+
+    add items needed for garden box
+
+commit 252f987aaeac2ed31ab20810fb6c41aa1ed77590
+Author: ahmed2729 <fouadebrahim132@yahoo.com>
+Date:   Sun May 29 17:57:29 2022 +0200
+
+    add ingredients for tomato soup
+
+commit 6e4e52f26b8c214116db5a63937d9a5c6f754d38
+Author: ahmed2729 <fouadebrahim132@yahoo.com>
+Date:   Sun May 29 16:34:43 2022 +0200
+
+    create yard and groceries lists
+
+C:\Users\A_E\Desktop\shopping(master)
+
